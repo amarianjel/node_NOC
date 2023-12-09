@@ -10,10 +10,10 @@ import { Server } from "./presentation/server";
 
 async function main(){
     
-    // await MongoDatabase.connect({
-    //     mongoUrl: envs.MONGO_URL,
-    //     dbName: envs.MONGO_DB_NAME,
-    // })
+    await MongoDatabase.connect({
+        mongoUrl: envs.MONGO_URL,
+        dbName: envs.MONGO_DB_NAME,
+    })
 
     // TODO: Crear una coleccion = tablas, documento = registro
     // const newLog = await LogModel.create({

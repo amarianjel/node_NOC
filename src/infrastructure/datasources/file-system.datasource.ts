@@ -46,6 +46,8 @@ export class FileSystemDatasource implements LogDatasource {
     } else {
       fs.appendFileSync( this.highLogsPath, logAsJson );
     }
+
+    console.log('Filesystem saved')
   }
   
   
