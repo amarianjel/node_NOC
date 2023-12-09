@@ -1,7 +1,6 @@
 node_modules/
+mongo/ 
 dist/
 
 logs/*
 .env
-
-mongo/
