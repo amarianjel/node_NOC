@@ -31,11 +31,9 @@ export class Server {
         // emailService.sendEmailWithFileSystemLogs(
         // );
 
-
-
         //TODO: Ver logs
-        const logs = await logRepository.getLogs( LogSeverityLevel.high );
-        console.log(logs);
+        // const logs = await logRepository.getLogs( LogSeverityLevel.high );
+        // console.log(logs);
 
         // CronService.createJob( 
         //     '*/5 * * * * *',
