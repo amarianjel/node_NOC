@@ -9,7 +9,3 @@ export const envs = {
   MAILER_SECRET_KEY: env.get('MAILER_SECRET_KEY').required().asString(),
   PROD: env.get('PROD').required().asBool(),
 }
-
-
-
-
