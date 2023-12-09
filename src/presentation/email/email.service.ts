@@ -6,7 +6,7 @@ interface SendMailOptions {
   to: string | string[];
   subject: string;
   htmlBody: string;
-  attachements?: Attachement[];
+  attachements?: Attachement[];  //+ Para adjuntos
 }
 
 interface Attachement {
@@ -52,7 +52,7 @@ export class EmailService {
   }
 
 
-  async sendEmailWithFileSystemLogs( to: string | string[] ) {
+  async sendEmailWithFileSystemLogs( to: string | string[] ) {  //README: Puede ser solo 1 o mas usuarios
     const subject = 'Logs del servidor';
     const htmlBody = `
     <h3>Logs de sistema - NOC</h3>

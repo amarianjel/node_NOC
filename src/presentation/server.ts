@@ -18,15 +18,9 @@ export class Server {
 
         // TODO: Mandar Email
         const emailService = new EmailService();
-        emailService.sendEmail({
-            to: 'abraham.marianjel@gmail.com',
-            subject: 'Teste de envio de email',
-            htmlBody: `
-                <h1>Teste de envio de email</h1>
-                <h3>LOG - NOC</h3>
-                <p>lorem velit</p>
-            `
-        })
+        emailService.sendEmailWithFileSystemLogs(
+            ['abraham.marianjel@gmail.com', 'abrahammarianjel@martacolvin.daemchillan.cl']
+        );
 
         // CronService.createJob( 
         //     '*/5 * * * * *',
